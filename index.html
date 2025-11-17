@@ -273,13 +273,13 @@
                     <!-- Mode Selection -->
                     <div class="flex gap-3 mb-8 justify-center">
                         <button onclick="setTimerMode('work')" id="mode-work" class="px-6 py-3 rounded-lg font-medium transition bg-blue-600 text-white">
-                            Work (25 min)
+                            Work
                         </button>
                         <button onclick="setTimerMode('short')" id="mode-short" class="px-6 py-3 rounded-lg font-medium transition bg-gray-200 text-gray-900 hover:bg-gray-300">
-                            Short Break (5 min)
+                            Short Break
                         </button>
                         <button onclick="setTimerMode('long')" id="mode-long" class="px-6 py-3 rounded-lg font-medium transition bg-gray-200 text-gray-900 hover:bg-gray-300">
-                            Long Break (15 min)
+                            Long Break
                         </button>
                     </div>
                     
@@ -519,7 +519,7 @@
                 </button>
             </div>
             
-            <div id="decksContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div id="decksContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 " style="background-color: var(--bg-card);">
                 <!-- Decks will be rendered here -->
             </div>
         </div>
@@ -2480,7 +2480,7 @@
                     <button onclick="renderDecks()" class="text-blue-600 hover:text-blue-700 font-medium mb-4">
                         ← Back to Decks
                     </button>
-                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="rounded-xl shadow-sm border border-gray-200 p-6 " style="background-color: var(--bg-card);">
                         <div class="flex justify-between items-center mb-4">
                             <h3 class="text-2xl font-bold text-gray-900">${escapeHtml(deck.name)}</h3>
                             <button onclick="openAddCardModal()" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition font-medium">
