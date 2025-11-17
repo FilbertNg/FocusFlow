@@ -1,0 +1,6 @@
+data/
+music/
+.venv/
+__pycache__
+.env
+.git
